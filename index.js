@@ -13,7 +13,10 @@ var mailgun_server = mailgun({
 var jsonparser = bodyparser.json();
 
 // create application/x-www-form-urlencoded parser
-var urlencodedparser = bodyparser.urlencoded();
+var urlencodedparser = bodyparser.urlencoded({
+	extended: true,
+	parameterLimit: 40
+});
 
 app.set('port', process.env.PORT || 80);
 app.use(app.router);
