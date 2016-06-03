@@ -1,6 +1,6 @@
 var express            = require('express'),
 	bodyparser         = require('body-parser'),
-	mailgun            = require('mailgun'),
+	mailgun            = require('mailgun-js'),
 	http               = require('http');
 
 var app = express();
