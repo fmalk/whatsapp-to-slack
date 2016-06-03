@@ -23,9 +23,14 @@ app.use(app.router);
 
 app.post('/email-spv', urlencodedparser, parseEmail);
 
-function parseEmail(req, res, next) {
-	console.log(req.body);
-	res.send(200);
+function parseEmail(req, res) {
+	try {
+		console.log(req.body);
+		res.send(200);
+	} catch (e) {
+		console.error(e);
+		res.send(500);
+	}
 }
 
 var server = http.createServer(app);
