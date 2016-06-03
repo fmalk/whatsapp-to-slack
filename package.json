@@ -1,0 +1,32 @@
+{
+  "name": "WhatsappToSlack",
+  "version": "0.0.1",
+  "description": "Hack to export Whatsapp Group's messages to a Slack channel, via mail export",
+  "main": "index.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "async": "latest",
+    "body-parser": "^1.12.4",
+    "express": "^3.20.2",
+    "moment": "^2.10.2",
+    "on-headers": "^1.0.0",
+    "q": "1.x",
+    "redis": "^0.12.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "mocha": "^2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmalk/whatsapp-to-slack.git"
+  },
+  "author": "Fernando Piancastelli <fernando@smartconvert.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmalk/whatsapp-to-slack/issues"
+  },
+  "homepage": "https://github.com/fmalk/whatsapp-to-slack#readme"
+}
